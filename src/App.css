@@ -1,0 +1,120 @@
+.app .btn {
+	border-radius: 0;
+}
+
+.app .notification {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.app-header {
+	border-radius: 0;
+	position: relative;
+	z-index: 1;
+	background-color: rgba(83, 179, 203, 1);
+	background-image: linear-gradient(
+		rgba(83, 179, 203, 0.87),
+		rgba(255, 175, 76, 0.76)
+	);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 300px;
+	margin-bottom: 0;
+}
+
+.app-header .greeting {
+	color: #fff;
+}
+
+.app-header .greeting h1 {
+	font-family: 'Bangers', sans-serif;
+	letter-spacing: 0.045em;
+	font-size: 65px;
+}
+
+.app-header .greeting p {
+	font-size: 20px;
+}
+
+.app-searchbar-wrapper {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-50px);
+	position: relative;
+	z-index: 2;
+}
+
+.app-searchbar-wrapper input,
+.app-searchbar-wrapper button {
+	height: 38px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.app-searchbar-wrapper input {
+	width: 400px;
+	padding: 12px;
+	-webkit-appearance: none;
+	border: 1px solid #5ad;
+	outline: 0;
+	transition: box-shadow 300ms ease;
+}
+
+.app-searchbar-wrapper input:focus {
+	box-shadow: 0 0 12px #5ad;
+}
+
+.app-searchbar-wrapper button {
+	-webkit-appearance: none;
+	background-color: #5ad;
+	border: 1px solid #5ad;
+	width: 60px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.guest-list .guest .btn {
+	margin-right: 4px;
+}
+
+.guest-list .guest.pending {
+	border-color: rgba(0, 0, 0, 0.2);
+	opacity: 0.5;
+}
+
+.guest-list-wrapper {
+	background: #fafafa;
+	padding: 20px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 500px) {
+	.app-searchbar-wrapper form {
+		width: 100%;
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.app-searchbar-wrapper input,
+	.app-searchbar-wrapper button {
+		display: block;
+		width: 100%;
+	}
+}
+
+input {
+	outline: 0;
+}
+
+input.error {
+	border-color: red !important;
+}
+
+input.error:focus {
+	box-shadow: 0 0 12px rgba(255, 0, 0, 0.4) !important;
+}
